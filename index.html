@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI School Management & Academic Assistant</title>
+<meta name="description" content="AI-powered school management for Pakistani schools: books, syllabus, papers, checking, results, attendance, fees. Works offline.">
+<meta name="theme-color" content="#123a6d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app"></div>
+<div id="print-root"></div>
+<div id="toast-root"></div>
+<div id="modal-root"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/seed.js"></script>
+<script src="js/app.js"></script>
+<!-- feature modules (each calls App.register) -->
+<script src="js/modules/dashboard.js"></script>
+<script src="js/modules/setup.js"></script>
+<script src="js/modules/books.js"></script>
+<script src="js/modules/syllabus.js"></script>
+<script src="js/modules/papers.js"></script>
+<script src="js/modules/scanpaper.js"></script>
+<script src="js/modules/checking.js"></script>
+<script src="js/modules/results.js"></script>
+<script src="js/modules/attendance.js"></script>
+<script src="js/modules/fees.js"></script>
+<script src="js/modules/notices.js"></script>
+<script src="js/modules/expert.js"></script>
+<script src="js/modules/settings.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){ App.boot(); });
+</script>
+</body>
+</html>
